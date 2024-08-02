@@ -12,9 +12,15 @@
 	String pwd = request.getParameter("inputpwd"); 
 	
 	if(id.equals("test") && pwd.equals("1234")){
-		out.println("로그인 성공");
+		/* out.println("로그인 성공"); */
+		response.sendRedirect("main.jsp");
 	}else{out.println("로그인실패");}
-	
 	%>
+	
+	<div>client ip : <%= request.getRemoteAddr()%></div>
+    <div>요청 uri : <%= request.getRequestURI()%></div>
+    <div>메소드 : <%= request.getMethod()%></div>
+    <div>서버포트 : <%= request.getServerPort()%></div>
+    <div>쿼리문 : <%= request.getQueryString()%></div>
 </body>
 </html>

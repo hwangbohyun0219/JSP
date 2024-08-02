@@ -7,13 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		String id = request.getParameter("userId");
-		String[] hobby = request.getParameterValues("hobby");
-		for(String h : hobby){
-			out.println(h + "<br>");
-		}
-		out.println(id + "님 환영합니다");
+	<%!
+	public int sum(int x, int y){
+			return x+y;
+	}
+	void message(){
+		System.out.println("hi");
+	}
 	%>
+	
+	<% 
+		int a = sum(2,3);// a=5;
+		message();
+	%>
+	
+	
 </body>
 </html>

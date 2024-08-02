@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="login_result.jsp" method="get">
-	<div>아이디 : <input type="text" name="inputId"></div>
-	<div>비밀번호 : <input type="password" name="inputpwd"></div>
-	<input type="submit" value="로그인">
+	<form action="stu_result.jsp">
+	<div>학번<input type="text" name="stuNo"></div>
+	<input type="submit" value="학생검색">
 	
 	
 	</form>
